@@ -7,7 +7,7 @@
 
 ``` ruby
 git clone https://github.com/aws/aws-codedeploy-agent.git
-gem install bundler -v 1.3.5
+gem install bundler -v 2.2.28
 cd aws-codedeploy-agent
 bundle install
 rake clean && rake
@@ -38,7 +38,7 @@ The integration test creates the following
 It terminates the test ec2 instance and deletes the CodeDeploy application at the end of each test run.
 It also terminates any test ec2 instances before starting up the test.
 
-Create your default aws credentials file in the default location (~/.aws/credentials on linux/mac and %USERPROFILE%.awscredentials on windows). Add your AWS access key, secret key, and optionally your session token there. The access key should have permission to create the above mentioned resources. You can also change the default region. Note that temporary credentials won't work. 
+Create your default aws credentials file in the default location (~/.aws/credentials on linux/mac and %USERPROFILE%.awscredentials on windows). Add your AWS access key, secret key, and optionally your session token there. The access key should have permission to create the above mentioned resources. You can also change the default region. Note that temporary credentials won't work.
 
 Sample format of the credentials file:
 
